@@ -1,0 +1,49 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c=0,d,e,k,i,n,min,max;
+    scanf("%d",&n);
+    while(n--)
+    {
+        scanf("%d",&a);
+    for(k=1;k>0;k++)
+    {
+        c=0;
+    for(i=1;i<=k;i++)
+    {
+        if(k%i==0)
+        {
+            c++;
+        }
+    }
+    if(c==2)
+    {
+        if(k<a)
+        {
+            min=k;
+        }
+        else
+        {
+            max=k;
+            break;
+        }
+    }
+    }
+    d=a-min;
+    e=max-a;
+    if(d==e)
+    {
+        printf("%d
+",min);
+    }
+    else if(d>e)
+    {
+        printf("%d
+",max);
+    }
+    else
+    {
+        printf("%d
+",min);
+    }
+}}
